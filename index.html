@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASC-DESC</title>
+
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+    h1{
+        color: rgb(238, 62, 171);
+    }
+    fieldset {
+        margin:5%;
+        padding: 5%;
+        background-color: rgba(152, 251, 152, 0.918);
+        border: 2px solid rgb(153, 150, 153);
+        border-radius: 10px;
+    }
+    p{
+        color:whitesmoke;
+    }
+    .des{
+        color: black;
+    }
+    #a{
+        color: rgb(225, 55, 231);
+    }
+    #b{
+        color:brown;
+    }
+</style>
+
+<body>
+    <fieldset>
+        <h1>Ascending Order</h1>
+        <p>Ascending input array: <span> ['Strawberry', 'Chocolate', 'Vanilla', 'Buttered Pecan', 'Sea Salt ', 'Chocolate Chip', 'Raspberry']</span></p>
+        <p class="des">Descending input array: <span>['Calla Lily','Rocktrumpet','Zinnia',' Orchid','Hibiscus','Begonias','Dahlia','Meadowsweet','Snapdragon']</span></p>
+        <button onclick="Assfunc()">Ascending</button>
+            <p id="a"></p> <br>
+            <button onclick="desfunc()">Descending</button>
+            <p id="b"></p>
+        <script>
+            var icecreams = ['Strawberry', 'Chocolate', 'Vanilla', 'Buttered Pecan', 'Sea Salt ', 'Chocolate Chip', 'Raspberry']
+            icecreams.sort()
+            function Assfunc() {
+                document.getElementById('a').innerHTML = icecreams   
+            }
+            var flowers=['Calla Lily','Rocktrumpet','Zinnia',' Orchid','Hibiscus','Begonias','Dahlia','Meadowsweet','Snapdragon']
+            flowers.sort().reverse()
+            function desfunc() {
+                document.getElementById('b').innerHTML = flowers
+            }
+        </script>
+    </fieldset>
+</body>
+
+</html>
